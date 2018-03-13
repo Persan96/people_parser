@@ -10,17 +10,18 @@ $ py pypeople_parser.py <file>
 
 Parser will recieve file looking like ex:
 
-``P|firstname|lastname
+P|firstname|lastname
 
 F|name|birth_year
 
 A|address|city|zip code
 
-T|mobile_phone_number|landline_number``
+T|mobile_phone_number|landline_number
 
 and turn input file into:
 
-``<people>
+``
+<people>
 
   <person>
   
@@ -56,4 +57,5 @@ and turn input file into:
     
   </person>
   
-</people>``
+</people>
+``
