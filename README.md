@@ -14,7 +14,7 @@ P|firstname|lastname
 
 F|name|birth_year
 
-A|address|city|zip code
+A|address|city|zip_code
 
 T|mobile_phone_number|landline_number
 
@@ -33,23 +33,23 @@ and turn input file into:
     
       <name>name</name>
       
-      <birth>birth year</birth>
+      <birth>birth_year</birth>
       
       <address>
       
-        <street>street</street>
+        <street>address</street>
         
         <city>city</city>
         
-        <zip>zip code</zip>
+        <zip>zip_code</zip>
         
       </address>
       
       <phone>
       
-        <mobile>mobile number</mobile>
+        <mobile>mobile_phone_number</mobile>
         
-        <landline>landline number</landline>
+        <landline>landline_number</landline>
         
       </phone>
       
