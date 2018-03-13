@@ -11,28 +11,49 @@ $ py pypeople_parser.py <file>
 Parser will recieve file looking like ex:
 
 ``P|firstname|lastname
+
 F|name|birth_year
+
 A|address|city|zip code
+
 T|mobile_phone_number|landline_number``
 
 and turn input file into:
 
 ``<people>
+
   <person>
+  
     <firstname>firstname</firstname>
+    
     <lastname>lastname</lastname>
+    
     <family>
+    
       <name>name</name>
+      
       <birth>birth year</birth>
+      
       <address>
+      
         <street>street</street>
+        
         <city>city</city>
+        
         <zip>zip code</zip>
+        
       </address>
+      
       <phone>
+      
         <mobile>mobile number</mobile>
+        
         <landline>landline number</landline>
+        
       </phone>
+      
     </family>
+    
   </person>
+  
 </people>``
