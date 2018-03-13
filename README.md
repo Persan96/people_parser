@@ -2,18 +2,21 @@
 Small test to parse a type of file to an xml file with people and their information.
 
 # USAGE
-Tested in powershell on windows 10\n
+Tested in powershell on windows 10
+
 $ py pypeople_parser.py <file>
 
 # EXAMPLE
 
 Parser will recieve file looking like ex:
+
 ``P|firstname|lastname
 F|name|birth_year
 A|address|city|zip code
 T|mobile_phone_number|landline_number``
 
 and turn input file into:
+
 ``<people>
   <person>
     <firstname>firstname</firstname>
