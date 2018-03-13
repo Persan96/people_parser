@@ -1,3 +1,4 @@
+// DO NOT USE, DOES NOT WORK
 package main
 
 import (
