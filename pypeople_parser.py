@@ -1,8 +1,11 @@
 import sys
 
-first, second, third, forth = 0, 1, 2, 3
-persons, families, phones, addresses = "P", "F", "T", "A"
-file = open(sys.argv[1], "r")
+first, second, third, forth, amount_of_arguments, less_than_necessary = 0, 1, 2, 3, len(sys.argv), 3
+if(amount_of_arguments < less_than_necessary):
+    print("Usage:\n\t $ python .\pypeople_parser.py <input_file> <output_file>\n")
+    sys.exit()
+persons, families, phones, addresses, inputfile, outputfile, read, write = "P", "F", "T", "A", sys.argv[1], sys.argv[2], "r", "w"
+file = open(inputfile, read)
 person_found = False
 family_found = False
 output = [ "<people>\n\t" ]
@@ -16,8 +19,8 @@ for i, line in enumerate(file):
         arguments.append("NO-INPUT")
 
     if(arguments[first] != persons and arguments[first] != families and arguments[first] != phones and arguments[first] != addresses):
-        print("INVALID INPUT")
-        break
+        print("INVALID DATA TYPE, PLEASE CONTACT DEVELOPER!")
+        sys.exit()
     if (arguments[first] == persons):
         if(person_found == False):
             person_found = True
@@ -41,6 +44,7 @@ if(family_found == True):
     output.append("</family>\n\t\t")
 output.append("</person>\n</people>")
 
-outputfile = open("output.txt", "w")
+outputfile = open(outputfile, write)
 
 outputfile.write("".join(output))
+outputfile.close()
