@@ -4,8 +4,8 @@ Small test to parse a type of file to an xml file with people and their informat
 # USAGE
 Tested in powershell on windows 10
 
-$ py pypeople_parser.py <file>
-
+``$ py pypeople_parser.py <input_file> <output_file>
+``
 # EXAMPLE
 
 Parser will recieve file looking like ex:
