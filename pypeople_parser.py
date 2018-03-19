@@ -15,6 +15,9 @@ for i, line in enumerate(file):
     for i in range(len(lines), 4):
         arguments.append("NO-INPUT")
 
+    if(arguments[first] != persons and arguments[first] != families and arguments[first] != phones and arguments[first] != addresses):
+        print("INVALID INPUT")
+        break
     if (arguments[first] == persons):
         if(person_found == False):
             person_found = True

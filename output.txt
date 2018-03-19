@@ -17,6 +17,7 @@
 </person>
 		<person><firstname>Barack</firstname><lastname>Obama
 </lastname>
-		<address><street>1600 Pennsylvania Avenue</street><city>Washington, D.C</city><zip>NO-INPUT</zip></address>
+		<address><street>1600 Pennsylvania Avenue</street><city>Washington, D.C
+</city><zip>NO-INPUT</zip></address>
 		</person>
 </people>
