@@ -10,14 +10,12 @@ Tested in powershell on windows 10
 
 Parser will recieve file looking like ex:
 
+```
 P|firstname|lastname
-
 F|name|birth_year
-
 A|address|city|zip_code
-
 T|mobile_phone_number|landline_number
-
+```
 and turn input file into:
 
 ``` 
