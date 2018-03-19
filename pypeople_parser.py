@@ -1,11 +1,22 @@
 import sys
 
-first, second, third, forth, amount_of_arguments, less_than_necessary = 0, 1, 2, 3, len(sys.argv), 3
-if(amount_of_arguments < less_than_necessary):
+first, second, third, forth, amount_of_arguments, necessary_amount = 0, 1, 2, 3, len(sys.argv), 3
+
+def printUsage():
     print("Usage:\n\t $ python .\pypeople_parser.py <input_file> <output_file>\n")
+
+if(amount_of_arguments < necessary_amount or amount_of_arguments > necessary_amount):
+    printUsage()
     sys.exit()
+
 persons, families, phones, addresses, inputfile, outputfile, read, write = "P", "F", "T", "A", sys.argv[1], sys.argv[2], "r", "w"
-file = open(inputfile, read)
+try:
+    file = open(inputfile, read)
+except IOError:
+    print("Error: File not found.")
+    printUsage()
+    sys.exit()
+
 person_found = False
 family_found = False
 output = [ "<people>\n\t" ]
